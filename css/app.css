@@ -61,3 +61,42 @@ a {
   text-decoration: none;
 }
 */
+
+.site {
+  flex-direction: row;
+  height: 100%;
+}
+
+.site__main {
+  flex-grow: 7;
+  align-self: stretch;
+  flex-basis: 0;
+  background: red;
+}
+
+.site__right-sidebar {
+  flex-grow: 3;
+  align-self: stretch;
+  flex-basis: 0;
+  background: blue;
+}
+
+@media screen and (min-aspect-ratio: 16/9) {
+  .site__main {
+    flex-grow: 8;
+  }
+
+  .site__right-sidebar {
+    flex-grow: 2;
+  }
+}
+
+@media screen and (max-aspect-ratio: 4/3) {
+  .site__main {
+    flex-grow: 6;
+  }
+
+  .site__right-sidebar {
+    flex-grow: 4;
+  }
+}
