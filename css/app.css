@@ -128,3 +128,15 @@ a {
   flex-grow: 0;
   background: pink;
 }
+
+.site__content .products {
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.site__content .product {
+  width: 50%;
+  height: 250px;
+  background: white;
+  border: black 1px solid;
+}
