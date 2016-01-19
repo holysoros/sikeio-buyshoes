@@ -72,6 +72,7 @@ a {
   align-self: stretch;
   flex-basis: 0;
   background: red;
+  flex-direction: row;
 }
 
 .site__right-sidebar {
@@ -79,6 +80,7 @@ a {
   align-self: stretch;
   flex-basis: 0;
   background: blue;
+  flex-direction: column;
 }
 
 @media screen and (min-aspect-ratio: 16/9) {
@@ -99,4 +101,30 @@ a {
   .site__right-sidebar {
     flex-grow: 4;
   }
+}
+
+.site__left-sidebar {
+  flex-basis: auto;
+  flex-grow: 0;
+  background: gray;
+}
+.site__left-sidebar h2 {
+  width: 180px;
+  padding: 20px;
+}
+
+.site__content {
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.site__right-sidebar .cart {
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.site__right-sidebar .checkout {
+  flex-basis: auto;
+  flex-grow: 0;
+  background: pink;
 }
