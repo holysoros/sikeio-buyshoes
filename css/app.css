@@ -79,7 +79,6 @@ a {
   flex-grow: 3;
   align-self: stretch;
   flex-basis: 0;
-  background: blue;
   flex-direction: column;
 }
 
@@ -127,11 +126,13 @@ a {
 .site__right-sidebar .cart {
   flex-basis: 0;
   flex-grow: 1;
+  overflow: scroll;
 }
 
 .site__right-sidebar .checkout {
   flex-basis: auto;
   flex-grow: 0;
+  height: 300px;
   background: pink;
 }
 
@@ -145,4 +146,10 @@ a {
   height: 250px;
   background: white;
   border: black 1px solid;
+}
+
+.cart__content .cart-item {
+  height: 150px;
+  margin-bottom: 20px;
+  background: green;
 }
