@@ -107,6 +107,11 @@ a {
   flex-basis: auto;
   flex-grow: 0;
   background: gray;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 180px;
+  height: 100%;
 }
 .site__left-sidebar h2 {
   width: 180px;
@@ -114,6 +119,7 @@ a {
 }
 
 .site__content {
+  margin-left: 180px;
   flex-basis: 0;
   flex-grow: 1;
 }
