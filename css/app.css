@@ -1,4 +1,5 @@
 @import "normalize.css";
+@import "../node_modules/perfect-scrollbar/dist/css/perfect-scrollbar.css";
 
 body, html {
   width: 100%;
